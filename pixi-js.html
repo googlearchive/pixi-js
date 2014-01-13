@@ -37,7 +37,7 @@ license that can be found in the LICENSE file.
         // You can use either PIXI.WebGLRenderer or PIXI.CanvasRenderer
         var w = this.offsetWidth - 4, h = this.offsetHeight - 4;
         this.renderer = new PIXI.WebGLRenderer(w, h);
-        this.webkitShadowRoot.appendChild(this.renderer.view);
+        this.shadowRoot.appendChild(this.renderer.view);
         //
         this.texture = PIXI.Texture.fromImage("google_chrome.png");
       },
